@@ -1,0 +1,10 @@
+h1. jQuery Hint Plugin with support for password fields
+
+This is a plugin for displaying a hint inside an input field, only when it is blurred and has no value.
+
+There are many plugins like these out there, I picked Remy Sharp's [1] and added support for password fields,
+using a strategy outlined by Roshan Bhattarai[2].
+
+fn1. http://remysharp.com/2007/01/25/jquery-tutorial-text-box-hints/
+
+fn2. http://roshanbh.com.np/2008/03/show-text-in-the-password-field.html
