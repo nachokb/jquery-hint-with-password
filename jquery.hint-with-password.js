@@ -66,10 +66,15 @@ $.fn.hint = function (blurClass) {
 
       replaceElement: {
         init: function() {
-          // create alternative text input element with title as value
-          var $alt = $input.clone();
           $input.addClass("replaced-for-title");
-          $alt.attr("id", null).attr("type", "text")
+
+          // create alternative text input element with title as value
+          var $alt = $('<input type="text"></input>').attr({
+            'class': $input.attr('class'),
+            'name':  $input.attr('name'),
+            'title': $input.attr('title'),
+            'style': $input.attr('style')
+          })
             .val(title)
             .insertBefore($input)
             .addClass("password-title")
